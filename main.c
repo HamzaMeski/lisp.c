@@ -1,12 +1,16 @@
 
 
+#include<inttypes.h>
 #include<stdio.h>
+
 
 
 int main()
 {
-	printf("hello world\n"); 
+	int nmb = 24;
+	printf("Memory address as integer: %" PRIuPTR "\n", (uintptr_t)&nmb); 
 
 
 	return 0;
 }
+
